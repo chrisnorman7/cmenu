@@ -46,6 +46,6 @@ class Menu(object):
    label, func = y
    print(self.format.format(pos = x + 1, label = label, func = func))
   try:
-   return self.entries[int(input(self.prompt)) - 1][1]()
+   return self.entries[int(input(self.prompt)) - 1][1]
   except ValueError:
    pass
